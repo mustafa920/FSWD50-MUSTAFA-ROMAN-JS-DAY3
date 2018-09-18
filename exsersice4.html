@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    #pic1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    #pic2 {
+        width: 250px;
+        height: 250px;
+    }
+    </style>
+    <title>ex-1</title>
+</head>
+
+<body>
+    <div id="pic1"></div>
+   
+    <script>
+    function weather(t) {
+
+        var sum = Math.floor((Math.random() * 50) - 5);
+        document.write(sum);
+
+        if (sum <= 10) {
+            document.getElementById('pic1').style.backgroundImage = "url('https://cdn.pixabay.com/photo/2013/08/20/15/47/sunset-174276__340.jpg')";
+        } else if (sum > 10 && sum < 32) {
+            document.getElementById('pic1').style.backgroundImage = "url('https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405__340.jpg')";
+        }else{
+        	document.getElementById("pic1").style.backgroundImage = "url('https://cdn.pixabay.com/photo/2016/01/19/15/48/luggage-1149289__340.jpg')";
+        }
+
+
+
+    }
+    weather();
+    </script>
+</body>
+
+</html>
