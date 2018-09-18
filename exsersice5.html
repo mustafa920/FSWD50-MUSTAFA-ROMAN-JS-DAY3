@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ex-5</title>
+</head>
+
+<body>
+    <script>
+    function calculate() {
+        var total = 0;
+        var a = [76, 85, 65, 93, 81];
+        for (var i = 0; i < a.length; i++) {
+
+            total += a[i];
+        }
+
+        var average = total / a.length;
+
+        if (average < 60) {
+            document.write("F");
+        } else if (average >= 60 && average < 70) {
+            document.write("D");
+        } else if (average >= 70 && average < 80) {
+            document.write("C");
+        } else if (average >= 80 && average < 90) {
+            document.write("B");
+        } else{
+            document.write("A");
+        }
+    }
+    calculate()
+    </script>
+</body>
+
+</html>
